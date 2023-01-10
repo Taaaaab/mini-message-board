@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    div 
+        each message in messages
+            h1 #{message.user}
+            h2 #{message.text}
+            h3 #{message.added}
+
+    a(href='/new') Submit new message
